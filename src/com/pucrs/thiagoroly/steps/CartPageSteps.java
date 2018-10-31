@@ -13,12 +13,11 @@ public class CartPageSteps {
 
     public void validateProductAdded(){
         if(cartPage.verifyCartIsEmpty()){
-            //TODO: "O carrinho está vazio."
+            //TODO: The cart is empty.
         }
         else {
-            //TODO: "O carrinho possui ao menos um produto."
+            //TODO: The cart has at least one product.
         }
-        //TODO: Printar e salvar evidência
     }
 
     public String verifyTotalPrice(){
@@ -27,8 +26,7 @@ public class CartPageSteps {
 
     public SignInUpPage proceedToCheckoutLogin(){
         SignInUpPage signInUpPage = cartPage.proceedToCheckoutButtonClick();
-        //TODO: "Prosseguindo para a tela de Checkout/Login."
-        //TODO: Printar e salvar evidência
+        //TODO: Proceeding to the Checkout / Login page.
         return signInUpPage;
     }
 }

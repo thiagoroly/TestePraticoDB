@@ -13,14 +13,12 @@ public class HomePageSteps {
 
     public void accessHomePage(){
         homepage.accessHomePage();
-        //TODO: Reporta Acesso com sucesso
-        //TODO: Printar e salvar evidência
+        //TODO: Website found successfully.
     }
 
     public ProductPage selectFirstProduct(){
         ProductPage productPage = homepage.firstProductClick();
-        //TODO: Reporta Produto selecionado
-        //TODO: Printar e salvar evidência
+        //TODO: Product Selected, proceeding to the detailed product page.
         return productPage;
     }
 }

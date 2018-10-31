@@ -13,14 +13,12 @@ public class ProductPageSteps {
 
     public void addProductToCart(){
         productPage.addToCartButtonClick();
-        //TODO: reporta "Produto adicionado ao carrinho
-        //TODO: Printar e salvar evidência
+        //TODO: Product added to cart
     }
 
     public CartPage proceedToCheckout(){
         CartPage cartPage = productPage.proceedToCheckoutButtonClick();
-        //TODO: reporta "Navegando para o carrinho
-        //TODO: Printar e salvar evidência
+        //TODO: Proceeding to cart page.
         return cartPage;
     }
 }

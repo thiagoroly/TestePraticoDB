@@ -14,6 +14,8 @@ public class Driver {
 
     public static WebDriver getDriver() {
         if (driver == null){
+            String path = System.getProperty("user.dir");
+            System.setProperty("webdriver.gecko.driver", path + "/drivers/geckodriver.exe");
             driver = new FirefoxDriver();
         }
         return driver;

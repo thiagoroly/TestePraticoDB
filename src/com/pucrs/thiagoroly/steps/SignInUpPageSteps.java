@@ -17,48 +17,48 @@ public class SignInUpPageSteps {
 
     public void createAnAccount(String email){
         signInUpPage.fillEmail(email);
-        //TODO: "Email para cadastro preenchido
+        //TODO: E-mail filled out.
         signInUpPage.createAccount();
-        //TODO: "Opção 'Criar uma conta' selecionada."
+        //TODO: Create an account 'option selected.
     }
 
     public void fillForm(String firstName, String lastName, String password, String address1, String address2,
                          String city, String zipCode, String mobilePhone, String reference){
         signInUpPage.selectGender();
-        //TODO: "Pronome de tratamento selecionado.
+        //TODO: Selected treatment pronoun.
         signInUpPage.fillFirstName(firstName);
-        //TODO: "Primeiro nome do cliente preenchido.
+        //TODO: First name fill out.
         signInUpPage.fillLastName(lastName);
-        //TODO:  "Último nome do cliente preenchido.
+        //TODO:  Last name fill out.
         signInUpPage.fillPassword(password);
-        //TODO: "Senha preenchida.
+        //TODO: Password fill out.
         signInUpPage.selectBirthDay();
-        //TODO: "Dia do nascimento selecionado.
+        //TODO: Birth day selected.
         signInUpPage.selectBirthMonth();
-        //TODO: "Mês do nascimento selecionado.
+        //TODO: Birth selected.
         signInUpPage.selectBirthYear();
-        //TODO: "Ano do nascimento selecionado.
+        //TODO: Birth year selected.
         signInUpPage.fillAddress1(address1);
-        //TODO: "Endereço preenchido.
+        //TODO: Address1 fill out.
         signInUpPage.fillAddress2(address2);
-        //TODO: "Complemento do endereco preenchido.
+        //TODO: Address2 fill out.
         signInUpPage.fillCity(city);
-        //TODO: "Cidade preenchida.");
+        //TODO: City fill out.
         state = signInUpPage.selectState();
-        //TODO: "Estado preenchido.");
+        //TODO: State fill out.
         signInUpPage.fillZipCode(zipCode);
-        //TODO: "Código postal preenchido.");
+        //TODO: "Zip code fill out.
         country = signInUpPage.verifyCountry();
-        //TODO: "País preenchido.");
+        //TODO: Country verified.
         signInUpPage.fillMobilePhone(mobilePhone);
-        //TODO: "Número do celular preenchido.");
+        //TODO: Phone number fill out.
         signInUpPage.fillReferenceAddress(reference);
-        //TODO: "Campo de referência preenchido.");
+        //TODO: Reference fill out.
     }
 
     public AddressPage finishAccountCreation() {
         AddressPage addressPage = signInUpPage.registerButtonClick();
-        //TODO: "Registro concluído.");
+        //TODO: Registration completed.
         return addressPage;
     }
 

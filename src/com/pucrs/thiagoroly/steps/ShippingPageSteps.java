@@ -13,12 +13,12 @@ public class ShippingPageSteps {
 
     public void agreeTermsOfService(){
         shippingPage.termsOfServiceCheckBoxCheck();
-        //TODO: Termos de serviço aceitos.
+        //TODO: Terms of service accepted.
     }
 
     public PaymentPage proceedToPayment(){
         PaymentPage paymentPage = shippingPage.proceedToCheckoutButtonClick();
-        //TODO: "Prosseguindo para tela de pagamento.
+        //TODO: Proceeding on to the payment page.
         return  paymentPage;
     }
 }

@@ -14,29 +14,28 @@ public class PaymentPageSteps {
 
     public void verifyTotalPrice(String totalPrice) {
         if(paymentPage.verifyTotalPrice().equals(totalPrice)) {
-
-            //TODO: "Preço total validado com sucesso
+            //TODO: Total price successfully validated
         } else {
-            //TODO: "Preço total inválido.");
+            //TODO: Invalid total price.
             assertTrue(paymentPage.verifyTotalPrice().equals(totalPrice));
         }
     }
 
     public void selectBankwirePayment() {
         paymentPage.bankWirePaymentButtonClick();
-        //TODO: "Pagamento por transferência foi selecionado
+        //TODO: Payment by bankWire was selected.
     }
 
     public void confirmOrder() {
         paymentPage.confirmOrderButtonClick();
-        //TODO: "Confirmando pedido
+        //TODO: Order confirmed.
     }
 
     public void validateSuccessfulOrder() {
         if(paymentPage.verifyOrderConfirmationLabel() && paymentPage.verifyBackToOrderButton()) {
-            //TODO: "Pedido concluído com sucesso!");
+            //TODO: Order completed successfully!
         } else {
-            //TODO: "Pedido não foi concluído!
+            //TODO: Order was not completed!
             assertTrue((paymentPage.verifyOrderConfirmationLabel() && paymentPage.verifyBackToOrderButton()));
         }
     }
